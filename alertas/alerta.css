@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* enfileirar as caixas */
+
+.conteiner
+{
+    display: flex;
+    flex-direction: row;
+}
+
+:not(.alerta, .caixa-texto)
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* aparência alertas, disposição fora e dentro */
+
+.alerta
+{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+    bottom: 55%;
+    grid-area: alerta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ícones */
+
+.alerta i
+{
+    font-size: 3.5em;
+    color: white;
+}
+
+/* caixa de alerta */
+
+.caixa-alerta
+{
+    position: relative;
+    width: 350px;
+    height: 75px;
+    padding: 15px 0 0 25px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'alerta caixa-texto caixa-texto caixa-texto'
+                       
+
+}
+
+/* texto da caixa de alerta */
+
+.caixa-texto
+{
+    grid-area: caixa-texto;
+    height: 100%;
+    text-align: right; 
+    line-height: 1.5em; 
+    position: absolute;
+    z-index: 1;
+}
+
+.caixa-texto p
+{
+    color: #b4b4b4;
+    font-size: 0.95em;
+}
+
