@@ -1,0 +1,143 @@
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 5fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    grid-template-areas: 'sidebar header header header'
+                         'sidebar container container container'
+                         'sidebar container container container'
+                         'sidebar footer footer footer';
+    color: black;
+}
+
+.header 
+{
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.sidebar 
+{
+    grid-area: sidebar;
+}
+
+.container 
+{
+    grid-area: container;
+    max-width: 100rem;
+}
+
+.footer 
+{
+    grid-area: footer;
+    background-color: rgba(238, 130, 238, 0.329);
+}
+
+#menu_dropdown 
+{
+    background-color: rgba(253, 126, 20, 1);
+    border-color: rgba(253, 126, 20, 1);
+    border-radius: 0px 0px 10px 0px;
+    width: 90%;
+    height: 90%;
+}
+
+#icone_menu 
+{
+    color:rgb(255, 251, 251);
+    font-size: 35px;
+    text-align: center;
+    margin-left: -2%;
+}
+
+#icone_menu_exit 
+{
+    color:rgb(255, 251, 251);
+    font-size: 35px;
+    text-align: center;
+    margin-left: -2%;
+}
+
+#menu_itens 
+{
+    background-color: rgba(253, 126, 20, 1);
+    border-color: rgba(253, 126, 20, 1);
+    border-top: -20px;
+    border-radius: 0px 0px 10px 0px;
+    margin-top: -2%;
+}
+
+#menu_houver:hover 
+{
+    background-color: rgb(253, 158, 81);
+    width: 100%;
+}
+
+.dropdown-menu 
+{
+    --bs-dropdown-width: 3rem;
+    --bs-dropdown-min-width: 90%;
+}
+
+i 
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 12%;
+}
+
+.card {
+    --bs-card-spacer-y: 0rem;
+}
+
+.grid2 
+{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: 'title_relatorio botoes_titulo';
+    color: black;
+    box-shadow: 3px 3px rgba(126, 125, 125, 0.13);
+}
+
+.title_relatorio
+{
+    grid-area: title_relatorio;
+    font-size: 18px;
+    padding: 1%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+.botoes_titulo
+{
+    grid-area: botoes_titulo;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#icone_filtro {
+    color: rgba(0, 58, 123, 1);
+    margin-right: 0.3em;
+}
+
+.botao_PDF {
+    color: rgba(0, 58, 123, 1);
+    border-color: rgba(0, 58, 123, 1);   
+    height: 70%; 
+    padding-top: 1%;
+}
+
+.btn-outline-primary {
+    --bs-btn-hover-bg: rgba(0, 58, 123, 1);
+    --bs-btn-hover-border-color: rgba(0, 58, 123, 1);
+    --bs-btn-active-bg: rgba(0, 58, 123, 1); 
+    --bs-btn-active-border-color: rgba(0, 58, 123, 1);
+}
