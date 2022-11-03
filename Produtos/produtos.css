@@ -13,7 +13,6 @@
 .header 
 {
     grid-area: header;
-    background-color: rgba(0, 0, 0, 0.192);
 }
 
 .sidebar 
@@ -25,6 +24,7 @@
 {
     grid-area: container;
     max-width: 100rem;
+    width: 97%;
 }
 
 .footer 
@@ -89,6 +89,8 @@ i
 
 .card {
     --bs-card-spacer-y: 0rem;
+    --bs-card-border-width: 0px;
+    --bs-card-border-radius: 0rem;
 }
 
 .grid2 
@@ -97,7 +99,7 @@ i
     grid-template-columns: 5fr 2fr;
     grid-template-areas: 'title_relatorio botoes_titulo';
     color: black;
-    box-shadow: 3px 3px rgba(126, 125, 125, 0.13);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
 }
 
 .title_relatorio
@@ -105,6 +107,7 @@ i
     grid-area: title_relatorio;
     font-size: 18px;
     padding: 1%;
+    padding-left: 2%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -141,3 +144,105 @@ p {
     --bs-btn-active-bg: rgba(0, 58, 123, 1); 
     --bs-btn-active-border-color: rgba(0, 58, 123, 1);
 }
+
+
+/* Alerta */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* enfileirar as caixas */
+
+.alertas
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5%;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+:not(.alerta, .caixa-texto)
+{
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.alerta
+{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: -4%;
+    bottom: 55%;
+    grid-area: alerta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ícones */
+
+.alerta i
+{
+    font-size: 3.5em;
+    color: white;
+    margin: 2%;
+}
+
+/* caixa de alerta */
+
+.caixa-alerta
+{
+    position: relative;
+    width: 29%;
+    height: 5rem;
+    padding: 15px 0 0 25px;
+    margin: 2%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'alerta caixa-texto caixa-texto caixa-texto'
+                       
+
+}
+
+/* texto da caixa de alerta */
+
+.caixa-texto
+{
+    grid-area: caixa-texto;
+    height: 100%;
+    text-align: right; 
+    line-height: 1.5em; 
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    margin: -20px;
+    margin-top: -2%;
+}
+
+.caixa-texto p
+{
+    color: #b4b4b4;
+    font-size: 16px;
+}
+
+
+
