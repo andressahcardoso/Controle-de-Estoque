@@ -4,7 +4,7 @@
 
 <h4> Sobre: </h4>
 
-<p align="justify" > Sistema desenvolvido para o controle de estoque interno. 3º Trimestre de 2022- Senac São Leopoldo. </p>
+<p align="justify" > Sistema desenvolvido para o controle de estoque interno do Senac São Leopoldo. 3º Trimestre de 2022. </p>
 
 <hr>
 
