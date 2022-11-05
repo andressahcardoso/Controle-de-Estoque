@@ -6,8 +6,6 @@ y.parentNode.replaceChild(y, x)
 var count = 1
 
 function menu_dropdown() {
-    console.log('oi')
-
 
     if (count == 1) {
         y.parentNode.replaceChild(x, y)

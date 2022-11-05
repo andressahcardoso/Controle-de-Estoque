@@ -1,40 +1,28 @@
-.grid-container 
-{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr 5fr 5fr;
-    grid-template-rows: 1fr 5fr 5fr 5fr;
     grid-template-areas: 'sidebar header header header'
                          'sidebar container container container'
                          'sidebar container container container'
-                         'sidebar footer footer footer';
+                         ;
     color: black;
 }
 
-.header 
-{
+.header {
     grid-area: header;
-    background-color: rgba(0, 0, 0, 0.192);
 }
 
-.sidebar 
-{
+.sidebar {
     grid-area: sidebar;
 }
 
-.container 
-{
+.container {
     grid-area: container;
     max-width: 100rem;
+    width: 97%;
 }
 
-.footer 
-{
-    grid-area: footer;
-    background-color: rgba(238, 130, 238, 0.329);
-}
-
-#menu_dropdown 
-{
+#menu_dropdown {
     background-color: rgba(253, 126, 20, 1);
     border-color: rgba(253, 126, 20, 1);
     border-radius: 0px 0px 10px 0px;
@@ -42,24 +30,14 @@
     height: 90%;
 }
 
-#icone_menu 
-{
+#icone_menu, #icone_menu_exit {
     color:rgb(255, 251, 251);
     font-size: 35px;
     text-align: center;
     margin-left: -2%;
 }
 
-#icone_menu_exit 
-{
-    color:rgb(255, 251, 251);
-    font-size: 35px;
-    text-align: center;
-    margin-left: -2%;
-}
-
-#menu_itens 
-{
+#menu_itens {
     background-color: rgba(253, 126, 20, 1);
     border-color: rgba(253, 126, 20, 1);
     border-top: -20px;
@@ -67,44 +45,42 @@
     margin-top: -2%;
 }
 
-#menu_houver:hover 
-{
+#menu_houver:hover {
     background-color: rgb(253, 158, 81);
     width: 100%;
 }
 
-.dropdown-menu 
-{
+.dropdown-menu {  /* Bootstrap */
     --bs-dropdown-width: 3rem;
     --bs-dropdown-min-width: 90%;
 }
 
-i 
-{
+i {
     color: white;
     font-size: 30px;
     text-align: center;
     margin-left: 12%;
 }
 
-.card {
+.card {  /* Bootstrap */
     --bs-card-spacer-y: 0rem;
+    --bs-card-border-width: 0px;
+    --bs-card-border-radius: 0rem;
 }
 
-.grid2 
-{
+.grid2 {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-areas: 'title_relatorio botoes_titulo';
     color: black;
-    box-shadow: 3px 3px rgba(126, 125, 125, 0.13);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
 }
 
-.title_relatorio
-{
+.title_relatorio {
     grid-area: title_relatorio;
     font-size: 18px;
     padding: 1%;
+    padding-left: 2%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -115,8 +91,7 @@ p {
     margin-bottom: 0rem;
 }
 
-.botoes_titulo
-{
+.botoes_titulo {
     grid-area: botoes_titulo;
     display: flex;
     justify-content: flex-end;
@@ -135,9 +110,110 @@ p {
     padding-top: 1%;
 }
 
-.btn-outline-primary {
+.btn-outline-primary {  /* Bootstrap */
     --bs-btn-hover-bg: rgba(0, 58, 123, 1);
     --bs-btn-hover-border-color: rgba(0, 58, 123, 1);
     --bs-btn-active-bg: rgba(0, 58, 123, 1); 
     --bs-btn-active-border-color: rgba(0, 58, 123, 1);
+}
+
+
+/* Alerta */
+
+.alertas {  /* Enfileirar as 'caixas' */
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: -4%;
+    bottom: 55%;
+    grid-area: alerta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alerta i {  /* Ícones */
+    font-size: 3.5em;
+    color: white;
+    margin: 2%;
+}
+
+.caixa-alerta {
+    position: relative;
+    width: 29%;
+    height: 5rem;
+    padding: 15px 0 0 25px;
+    margin: 2%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'alerta caixa-texto caixa-texto caixa-texto'
+}
+
+.caixa-texto {
+    grid-area: caixa-texto;
+    height: 100%;
+    text-align: right; 
+    line-height: 1.5em; 
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    margin: -20px;
+    margin-top: -2%;
+}
+
+.caixa-texto p {
+    color: #b4b4b4;
+    font-size: 16px;
+}
+
+
+/* Tabelas */
+
+#tabela {
+    margin-top: 2%;
+    border: 0.01px solid rgba(0, 0, 0, 0.11);
+}
+
+
+.edit {
+    font-size: 20px;
+    color: black;
+    margin-top: 40px;
+}
+
+.delete {
+    font-size: 22px;
+    color: black;
+    margin-right: 2rem;
+}
+
+.btn_edit_delete {
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.green_circle {
+    font-size: 24px;
+    color: rgba(80, 219, 86, 1);
+}
+
+.orange_circle {
+    font-size: 24px;
+    color: rgba(253, 126, 20, 1);
+}
+
+.red_circle {
+    font-size: 24px;
+    color: rgba(255, 0, 0, 1);
 }
