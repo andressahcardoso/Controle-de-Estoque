@@ -22,6 +22,9 @@
     width: 97%;
 }
 
+
+/* Menu */
+
 #menu_dropdown {
     background-color: rgba(253, 126, 20, 1);
     border-color: rgba(253, 126, 20, 1);
@@ -62,63 +65,8 @@ i {
     margin-left: 12%;
 }
 
-.card {  /* Bootstrap */
-    --bs-card-spacer-y: 0rem;
-    --bs-card-border-width: 0px;
-    --bs-card-border-radius: 0rem;
-}
 
-.grid2 {
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    grid-template-areas: 'title_relatorio botoes_titulo';
-    color: black;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
-}
-
-.title_relatorio {
-    grid-area: title_relatorio;
-    font-size: 18px;
-    padding: 1%;
-    padding-left: 2%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-bottom: 0rem;
-}
-
-p {
-    margin-bottom: 0rem;
-}
-
-.botoes_titulo {
-    grid-area: botoes_titulo;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#icone_filtro {
-    color: rgba(0, 58, 123, 1);
-    margin-right: 0.3em;
-}
-
-.botao_PDF {
-    color: rgba(0, 58, 123, 1);
-    border-color: rgba(0, 58, 123, 1);   
-    height: 70%; 
-    padding-top: 1%;
-}
-
-.btn-outline-primary {  /* Bootstrap */
-    --bs-btn-hover-bg: rgba(0, 58, 123, 1);
-    --bs-btn-hover-border-color: rgba(0, 58, 123, 1);
-    --bs-btn-active-bg: rgba(0, 58, 123, 1); 
-    --bs-btn-active-border-color: rgba(0, 58, 123, 1);
-}
-
-
-/* Alerta */
+/* Box | Alerta */
 
 .alertas {  /* Enfileirar as 'caixas' */
     display: flex;
@@ -178,13 +126,71 @@ p {
 }
 
 
-/* Tabelas */
+/* Barra | Título do Relatório */
+
+.card {  /* Bootstrap */
+    --bs-card-spacer-y: 0rem;
+    --bs-card-border-width: 0px;
+    --bs-card-border-radius: 0rem;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: 'title_relatorio botoes_titulo';
+    color: black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+.title_relatorio {
+    grid-area: title_relatorio;
+    font-size: 18px;
+    padding: 1%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+.botoes_titulo {
+    grid-area: botoes_titulo;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#icone_filtro {
+    color: rgba(0, 58, 123, 1);
+    margin-right: 0.3em;
+}
+
+.botao_PDF {
+    color: rgba(0, 58, 123, 1);
+    border-color: rgba(0, 58, 123, 1);   
+    height: 70%; 
+    padding-top: 1%;
+}
+
+.btn-outline-primary {  /* Bootstrap */
+    --bs-btn-hover-bg: rgba(0, 58, 123, 1);
+    --bs-btn-hover-border-color: rgba(0, 58, 123, 1);
+    --bs-btn-active-bg: rgba(0, 58, 123, 1); 
+    --bs-btn-active-border-color: rgba(0, 58, 123, 1);
+}
+
+
+/* Tabela */
 
 #tabela {
     margin-top: 2%;
     border: 0.01px solid rgba(0, 0, 0, 0.11);
+    page-break-inside: auto;
 }
-
 
 .edit {
     font-size: 20px;
@@ -216,4 +222,22 @@ p {
 .red_circle {
     font-size: 24px;
     color: rgba(255, 0, 0, 1);
+}
+
+th, td {
+    white-space: nowrap;   /* "Impede" a quebra de linha do texto */
+}
+
+.table>:not(caption)>*>* {
+    padding: .5rem 1.5rem;
+}
+
+#padding {
+    padding: .5rem .5rem;
+}
+
+table {
+    max-height: 21rem;
+    overflow: auto;
+    display:inline-block;
 }

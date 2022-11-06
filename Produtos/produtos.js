@@ -1,4 +1,4 @@
-var x = document.querySelector("#icone_menu_exit");
+var x = document.querySelector("#icone_menu_exit");  /* Menu */
 var y = document.querySelector("#icone_menu");
 
 y.parentNode.replaceChild(y, x)
@@ -21,7 +21,7 @@ function menu_dropdown() {
 }
 
 
-var nome_relatorio = 'Produtos'
+var nome_relatorio = 'Produtos'  /* Exportar em PDF */
 
 function teste() {
     var doc = new jsPDF()
@@ -34,4 +34,6 @@ function teste() {
         format: 'letter'
     })
 }
+
+
 
