@@ -237,7 +237,7 @@ th, td {
 }
 
 table {
-    max-height: 21rem;
+    max-height: 20rem;
     overflow: auto;
     display:inline-block;
 }
