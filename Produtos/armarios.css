@@ -226,7 +226,7 @@ p {
 
 th, td {
     white-space: nowrap;   /* "Impede" a quebra de linha do texto */
-    width: 100%;
+    /* width: 100%; */
 }
 
 .table>:not(caption)>*>* {
@@ -241,4 +241,7 @@ table {
     max-height: 20rem;
     overflow: auto;
     display:inline-block;
+    
+    align-items: center;
+    justify-content: center;
 }

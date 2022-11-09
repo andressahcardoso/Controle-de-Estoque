@@ -72,7 +72,7 @@ button {
     background-color: rgb(253, 126, 20);
     color: #ffffff;
     width: 20%;
-    height: 7%;
+    height: 8%;
     border: 0;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
@@ -91,6 +91,11 @@ button {
     border-color: black solid!important;
 }
 
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+    width: 50vh;
+}
 
 /* Botão de Fechar */
 
