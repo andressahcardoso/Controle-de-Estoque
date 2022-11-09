@@ -3,8 +3,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.grid-container 
-{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 1fr 1fr;
@@ -14,15 +13,13 @@
     width: 100%;
 }
 
-.barra_top_laranja
-{
+.barra_top_laranja {
     grid-area: barra_top_laranja;
     background-color: rgba(253, 126, 20, 1);
     height: 4vh;
 }
 
-.container 
-{
+.container {
     grid-area: container;
     display: flex;
     align-items: center;
@@ -36,8 +33,7 @@
     height: 4vh;
 }
 
-.barra_low_azul 
-{
+.barra_low_azul {
     grid-area: barra_low_azul;
     background-color: rgb(0, 57, 123);
     height: 6vh; 
@@ -50,13 +46,14 @@
 }
 
 
-/* Caixa de texto */
-.caixa{
-    background-color: white;
+/* Caixa de Texto */
+
+.caixa {
     width: 100vh;
     height: 70vh;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +68,7 @@
     padding-top: 4vh;
 }
 
-button{
+button {
     background-color: rgb(253, 126, 20);
     color: #ffffff;
     width: 20%;
@@ -81,19 +78,23 @@ button{
     box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
-/*botão da senha */
-.senha{
+
+/* Botão da Senha */
+
+.senha {
   color:  rgb(253, 126, 20);
   font-size: 100%;
   text-decoration: none;
 }
 
-.form-control{
+.form-control {
     border-color: black solid!important;
 }
 
-/*botão de fechar */
-#fechar{
+
+/* Botão de Fechar */
+
+#fechar {
     width: 30px;
     height: 30px;
     border-radius: 20px;
@@ -101,27 +102,18 @@ button{
     background-color: #0a119a;
     box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
     position: absolute;
-
-    margin-top: -60vh; /* AAAAAAAAA */
+    margin-top: -60vh;  /* ARRUMAR */
     margin-right: -89vh;
-    
-}
-
-.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
-    width: 50vh;
-
 }
 
 
+/* Botão "Não lembro minha senha" */
 
-/*botão Não lembro minha senha */
-#button2{
-    
+#button2 { 
     color:  rgb(253, 126, 20);
     text-decoration: none;
     font-size: 14px;
     margin-right: -20vh;
     margin-top: -20px;
     white-space: nowrap;  
-
 }

@@ -68,7 +68,7 @@ i {
 
 /* Box | Alerta */
 
-.alertas {  /* Enfileirar as 'caixas' */
+.alertas {  /* Enfileirar as "caixas" */
     display: flex;
     flex-direction: row;
     margin-top: 3.5%;

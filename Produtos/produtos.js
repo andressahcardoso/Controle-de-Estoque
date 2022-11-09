@@ -23,7 +23,9 @@ function menu_dropdown() {
 
 var nome_relatorio = 'Produtos'  /* Exportar em PDF */
 
-function teste() {
+function PDF() {
+    console.log("Tabela PDF")
+    
     var doc = new jsPDF()
     doc.text('Tabela de Produtos', 10, 10)
     doc.save(nome_relatorio+'.pdf')
@@ -34,6 +36,3 @@ function teste() {
         format: 'letter'
     })
 }
-
-
-
