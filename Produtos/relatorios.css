@@ -162,35 +162,46 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(255, 68, 0, 0.418);
-    border: 8px solid white;
-    border-radius: 15px;
-    padding: 4px;
+    padding: 10px;
 }
 
 .search {
     background-color: rgba(255, 166, 0, 0);
     border: 0px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0px;
-    color: white;
+    color: black;
     padding-left: 10px;
+    background-color: white;
+    border: 1px solid rgb(175, 171, 168);
+    padding: 4px;
 }
 
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
+    border: 1px solid rgb(175, 171, 168);
     outline: 0;
 } 
 
 input::placeholder {
-    color: white;
+    color: black;
+    padding-left: 5px;
+}
+
+.search2 {
+    background-color: rgba(253, 126, 20, 1);
+    width: 15%;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding: 3px;
+
 }
 
 .search_icon {
     font-size: 18px;
-    padding-right: 10px;
+    padding-left: 4px;
 }
 
 
