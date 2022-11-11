@@ -13,6 +13,29 @@
     <link rel='stylesheet' type='text/css' media='screen' href='armarios.css'>
 </head>
 <body> 
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar Funcionários</h5>
+            <button type="button" class="btn-close  btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr class="linha">
+        <div class="offcanvas-body">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Id do Funcionário</label>
+                <input type="nome" class="form-control" id="nome">
+              </div>
+                 
+              <div class="mb-3">
+                  <label for="idfuncionario" class="form-label">Sala</label>
+                  <input type="idfuncionario" class="form-control" id="idfuncionario">
+              </div>
+              <div id="end">
+              <button type="aplicar" class="btn-primary">Aplicar</button>
+            </div>
+        </div>
+    </div>
+
     <section class='grid-container'>
         <div class="header">
             <div class="alertas">
@@ -75,11 +98,11 @@
             <div class="card grid2">
 
                 <div class="title_relatorio">
-                    <p class="titulo_relatorio">Produtos</p>
+                    <p class="titulo_relatorio">Funcionários</p>
                 </div>
                 
                 <div class="card-body botoes_titulo">                 
-                    <i id="icone_filtro" class="bi bi-funnel-fill "></i>
+                    <i id="icone_filtro" class="bi bi-funnel-fill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
                     <button onclick="teste()" type="button" class="btn btn-outline-primary botao_PDF">Gerar PDF</button>
                 </div>
 

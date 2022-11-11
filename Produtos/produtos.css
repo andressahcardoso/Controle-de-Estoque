@@ -241,3 +241,52 @@ table {
     overflow: auto;
     display:inline-block;
 }
+
+
+
+/* Filtro */
+
+.offcanvas {
+    background-color: rgb(253, 126, 20);
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.btn-close {
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    --btn-close-color: rgba(255, 255, 255, 0);
+}
+
+.linha {
+    color: white;
+    width: 30%;
+    height: 4px;
+    background: white;      
+}
+
+.form-control{
+    background-color:rgb(253, 126, 20);
+    border-color: white;
+}
+  
+.form-label {
+    color: #FFF;
+}
+  
+.btn-primary{
+    background:#FFF;
+    color: rgb(253, 126, 20);
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 7px 20px 7px 20px;
+}
+
+#end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
