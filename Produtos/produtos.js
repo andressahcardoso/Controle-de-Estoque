@@ -36,3 +36,28 @@ function PDF() {
         format: 'letter'
     })
 }
+
+
+// Adicionar Produtos
+
+function more(valorMaximo){
+    var value = parseInt(document.getElementById('qtd-prod').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value >= valorMaximo) {
+        value = valorMaximo;
+    } else {
+        value++;
+    }
+    document.getElementById('qtd-prod').value = value;
+  }
+  
+  function less(valorMinimo){
+    var value = parseInt(document.getElementById('qtd-prod').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value <= valorMinimo) {
+        value = 0;
+    } else {
+        value--;
+    }
+    document.getElementById('qtd-prod').value = value;
+  }
