@@ -234,3 +234,21 @@ input::placeholder {
     --bs-btn-active-bg: rgba(0, 58, 123, 1); 
     --bs-btn-active-border-color: rgba(0, 58, 123, 1);
 }
+
+/* Pop-Up */
+
+.btn-child {
+    background-color: orange!important;
+    color: white!important;
+}
+
+#exampleModalLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    --bs-modal-header-border-width: 0px;
+    --bs-modal-footer-border-width: 0px;
+}

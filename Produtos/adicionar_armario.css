@@ -177,3 +177,20 @@ input::placeholder
     justify-content: space-between;
 }
 
+/* Pop-Up */
+
+.btn-child {
+    background-color: orange!important;
+    color: white!important;
+}
+
+#exampleModalLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    --bs-modal-header-border-width: 0px;
+    --bs-modal-footer-border-width: 0px;
+}
