@@ -263,13 +263,15 @@ table {
 .linha {
     color: white;
     width: 30%;
-    height: 4px;
-    background: white;      
+    height: 2px;
+    background: white;
+    margin-top: -2px;      
 }
 
 .form-control{
     background-color:rgb(253, 126, 20);
     border-color: white;
+    height: 5%;
 }
   
 .form-label {
