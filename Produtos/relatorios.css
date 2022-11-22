@@ -238,7 +238,7 @@ input::placeholder {
 /* Pop-Up */
 
 .btn-child {
-    background-color: orange!important;
+    background-color: rgba(253, 126, 20, 1)!important;
     color: white!important;
 }
 
