@@ -143,23 +143,17 @@ input
     width: 27rem;
     height: 3.5rem;
     border: 0;
+    margin-bottom: 5%;
     border-radius: 2px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     outline: none;
     text-indent: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
-.input_descricao
-{
-    width: 27rem;
-    height: 8.5rem;
-    margin-top: 4%;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    outline: none;
-    text-indent: 15px;
-}
 
 /* escrita dentro da caixa de texto (placeholder) */
 
@@ -173,14 +167,6 @@ input::placeholder
 
 
 
-
-#disabled  /* placeholder da caixa de opções */
-{
-    color: white;
-    background-color: #cecece;
-    font-style: italic;
-}
-
 .caixa_input {
     width: 100%;
     margin: 5%;
@@ -188,131 +174,6 @@ input::placeholder
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.select {    
-    width: 27rem;
-    height: 3.5rem;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    outline: none;
-    text-indent: 15px;
-    color: #a7a6a6;
-    font-style: italic;
-    font-size: 18px;
-    margin-top: 4%;
-    border-right: 16px solid transparent
-}
-
-.select_val {    
-    width: 17rem;
-    height: 3.5rem;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    outline: none;
-    text-indent: 15px;
-    color: #a7a6a6;
-    font-style: italic;
-    font-size: 18px;
-    margin-top: 4%;
-}
-
-
-
-
-.qtd {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.qtd label{
-    color: #a7a6a6;
-    font-style: italic;
-    font-size: 18px;
-}
-
-/* Botões para quantidade */
-
-#qtd-prod{
-    height: 4rem;
-    width: 4.5em;
-}
-
-.qtd input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    --webkit-appearance: none;
-    margin: 0; }
-
-.qtd input::placeholder
-{
-    text-indent: 15px;
-    color: #a7a6a6;
-    font-style: italic;
-    font-size: 18px; 
-}
-
-button
-{
-    border:0;
-    background-color: white;
-}
-
-button i 
-{
-    font-size: 23px;
-    color: rgba(170, 170, 170);
-}
-
-button i:hover 
-{
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-/* Data de validade */
-
-#data-val{
-    height: 4.5em;
-    width: 70%;
-}
-
-input[type='date']:in-range::-webkit-datetime-edit-year-field,
-input[type='date']:in-range::-webkit-datetime-edit-month-field,
-input[type='date']:in-range::-webkit-datetime-edit-day-field,
-input[type='date']:in-range::-webkit-datetime-edit-text { 
-    color: #aaaaaa;   }
-
-    
-#data-val:hover{
-    cursor: pointer;
-    background-color: rgba(170, 170, 170, 0.2);
-}
-
-/* escrição */
-
-#description{
-    height: 10em;
-    width: 36em;
-}
-
-/* seção */
-
-.local{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.input_2 {
-    margin-top: 4%;
-}
-
-input[type="date" i] {
-    padding: 0px 20px 0px 0px;
 }
 
 

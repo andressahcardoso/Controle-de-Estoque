@@ -60,4 +60,4 @@ function more(valorMaximo){
         value--;
     }
     document.getElementById('qtd-prod').value = value;
-  }
+}

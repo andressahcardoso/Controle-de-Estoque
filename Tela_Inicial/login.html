@@ -12,28 +12,29 @@
     <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
+
     <div class="grid-container">
         <div class="barra_top_laranja"></div>
 
         <div class="container">
             <div class="caixa">
-
                 <h1>Login</h1>
                 <button id="fechar" onclick="location.href='tela_inicial.html'">X</button>
-                
+
                 <form class="input-group">
-                    <input type="email" id="floatingInputValue" placeholder="">
-                    <label for="floatingInputValue">E-mail</label>
+                    <input type="text" id="name" name="username" placeholder="">
+                    <label for="name" >Nome de usuário</label>
+                </form>
+
+                <form class="input-group">
+                    <input type="password" placeholder="" id="senha" name="password">
+                    <label for="senha">Senha</label>
                 </form>
                 
-                <form class="input-group">
-                    <input type="password" id="floatingInputValue" placeholder="">
-                    <label for="floatingInputValue">Senha</label>
-                </form>
-                  
                 <p><a href="" id="button2">Não lembro minha senha</a></p>
 
-                <button onclick="location.href='.././Produtos/produtos.html'">Entrar</button>
+                <button type="submit" onclick="login()">Entrar</button>
+   
             </div>
         </div>
 
@@ -42,5 +43,7 @@
             <div class="barra_low_azul"></div>
         </div>
     </div>
+
+    <script src="login.js"></script>
 </body>
 </html>
